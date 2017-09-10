@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-class Field extends Component {
-    contructor(props) {
+export default class Field extends Component {
+    constructor(props) {
         super(props)
         this.state = { value: props.initialValue }
         this.handleChange = this.handleChange.bind(this)
@@ -17,4 +17,3 @@ class Field extends Component {
         )
     }
 }
-export default Field
